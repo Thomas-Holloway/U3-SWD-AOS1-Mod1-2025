@@ -2,13 +2,13 @@
 //  ViewController.swift
 //  SAC1-Module1
 //
-//  Created by sac19  on 21/2/2025.
+//  Created by sac19 on 21/2/2025.
 //
 
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     // Inputs
     @IBOutlet weak var txtCost: UITextField!
     @IBOutlet weak var segTip: UISegmentedControl!
@@ -20,9 +20,7 @@ class ViewController: UIViewController {
     
     // Buttons
     
-    /*
-     Function: Calulate the amount each person pays
-     */
+    /* Function: Calulate the amount each person pays */
     @IBAction func btnCalculate(_ sender: Any) {
         if txtCost.text != "" { // Existence Check
             if Float(txtCost.text!) != nil { // Type Check
@@ -66,9 +64,7 @@ class ViewController: UIViewController {
         }
     }
     
-    /*
-     Function: Clear all input and output fields, reset segments to default
-     */
+    /* Function: Clear all input and output fields, reset segments to default */
     @IBAction func btnClear(_ sender: Any) {
         txtCost.text = ""
         segTip.selectedSegmentIndex = 0
@@ -77,12 +73,8 @@ class ViewController: UIViewController {
         lblMessage.text = ""
     }
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
-
 }
-
